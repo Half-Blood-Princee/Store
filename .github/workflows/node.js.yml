@@ -29,4 +29,6 @@ jobs:
     #- run: npm ci
     - run: yarn install
     #- run: yarn buildpack create-custom-origin packages/venia-concept
-    - run: yarn watch:venia
+    #- run: yarn watch:venia
+    -yarn global add pm2
+    -pm2 start pwa-studio
