@@ -4,21 +4,21 @@ import { Form } from 'informed';
 import { func, shape, string, bool } from 'prop-types';
 import { useCreateAccount } from '@magento/peregrine/lib/talons/CreateAccount/useCreateAccount';
 
-import { useStyle } from '../../classify';
-import combine from '../../util/combineValidators';
+import { useStyle } from '@magento/venia-ui/lib/classify';
+import combine from '@magento/venia-ui/lib/util/combineValidators';
 import {
     hasLengthAtLeast,
     isRequired,
     validatePassword
-} from '../../util/formValidators';
-import Button from '../Button';
-import Checkbox from '../Checkbox';
-import Field from '../Field';
-import TextInput from '../TextInput';
+} from '@magento/venia-ui/lib/util/formValidators';
+import Button from '@magento/venia-concept/src/components/Button';
+import Checkbox from '@magento/venia-ui/lib/components/Checkbox';
+import Field from '@magento/venia-ui/lib/components/Field';
+import TextInput from '@magento/venia-ui/lib/components/TextInput';
 import defaultClasses from './createAccount.module.css';
-import FormError from '../FormError';
-import Password from '../Password';
-import GoogleRecaptcha from '../GoogleReCaptcha';
+import FormError from '@magento/venia-ui/lib/components/FormError';
+import Password from '@magento/venia-ui/lib/components/Password';
+import GoogleRecaptcha from '@magento/venia-ui/lib/components/GoogleReCaptcha';
 
 const CreateAccount = props => {
     const talonProps = useCreateAccount({

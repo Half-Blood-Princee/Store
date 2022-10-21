@@ -11,7 +11,7 @@ import FilterModalOpenButton, {
     FilterModalOpenButtonShimmer
 } from '../../components/FilterModalOpenButton';
 import { FilterSidebarShimmer } from '../../components/FilterSidebar';
-import Gallery, { GalleryShimmer } from '../../components/Gallery';
+import Gallery, { GalleryShimmer } from '@magento/venia-concept/src/components/Gallery';
 import { StoreTitle } from '../../components/Head';
 import Pagination from '../../components/Pagination';
 import ProductSort, { ProductSortShimmer } from '../../components/ProductSort';

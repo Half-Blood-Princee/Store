@@ -17,6 +17,16 @@
  * or modify functionality from its dependencies.
  */
 
-function localIntercept() {}
+function localIntercept(targets) {
+    targets.of('@magento/venia-ui').routes.tap((routes) => {
+        routes.push({
+            exact: true,
+            name: 'Cart Page',
+            path: require.resolve('./src/components/CartPage'),
+            pattern: '/cart'
+        });
+        return routes;
+    });
+}
 
 module.exports = localIntercept;

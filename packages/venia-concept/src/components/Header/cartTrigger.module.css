@@ -1,9 +1,9 @@
 .counter {
     composes: absolute from global;
-    composes: bg-brand-dark from global;
+    background: #000000;
     composes: font-semibold from global;
-    composes: leading-tight from global;
-    composes: left-sm from global;
+    line-height: 1.4;
+    left: 1rem;
     composes: min-w-[1.25rem] from global;
     composes: px-1 from global;
     composes: py-0 from global;
@@ -20,7 +20,6 @@
     composes: flex from global;
     composes: h-[3rem] from global;
     composes: justify-center from global;
-    composes: min-w-[3rem] from global;
     composes: relative from global;
     composes: z-foreground from global;
 }

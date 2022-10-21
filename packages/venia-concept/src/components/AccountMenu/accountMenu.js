@@ -3,7 +3,7 @@ import { shape, string } from 'prop-types';
 import { useAccountMenu } from '@magento/peregrine/lib/talons/Header/useAccountMenu';
 
 import { useStyle } from '@magento/venia-ui/lib/classify';
-import CreateAccount from '@magento/venia-ui/lib/components/CreateAccount';
+import CreateAccount from '@magento/venia-concept/src/components/CreateAccount';
 import SignIn from '@magento/venia-concept/src/components/SignIn/signIn';
 import AccountMenuItems from './accountMenuItems';
 import ForgotPassword from '@magento/venia-ui/lib/components/ForgotPassword';

@@ -14,7 +14,7 @@ import resourceUrl from '@magento/peregrine/lib/util/makeUrl';
 import {useStyle} from '@magento/venia-ui/lib/classify';
 import defaultClasses from './header.module.css';
 import MegaMenu from '@magento/venia-ui/lib/components/MegaMenu';
-import PageLoadingIndicator from '@magento/venia-ui/lib/components/PageLoadingIndicator';
+import PageLoadingIndicator from '@magento/venia-concept/src/components/PageLoadingIndicator';
 import {useIntl} from 'react-intl';
 
 const SearchBar = React.lazy(() => import('@magento/venia-ui/lib/components/SearchBar'));
