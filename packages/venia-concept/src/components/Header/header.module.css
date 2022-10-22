@@ -15,11 +15,29 @@
     composes: lg_px-8 from global;
 }
 
+.deliveryText{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.socialMedia{
+    display: flex;
+    gap: 13px;
+}
+
+.phoneNumber{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .switchers {
     composes: auto-cols-max from global;
-    composes: grid from global;
+    display: flex;
+    justify-content: space-between;
     composes: grid-flow-col from global;
-    composes: justify-end from global;
+    align-items: center;
     composes: max-w-site from global;
     composes: mx-auto from global;
     composes: relative from global;

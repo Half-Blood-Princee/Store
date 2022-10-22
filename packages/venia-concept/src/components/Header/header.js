@@ -15,7 +15,10 @@ import {useStyle} from '@magento/venia-ui/lib/classify';
 import defaultClasses from './header.module.css';
 import MegaMenu from '@magento/venia-ui/lib/components/MegaMenu';
 import PageLoadingIndicator from '@magento/venia-concept/src/components/PageLoadingIndicator';
-import {useIntl} from 'react-intl';
+import {FormattedMessage, useIntl} from 'react-intl';
+import {PhoneCall, Instagram, Youtube} from 'react-feather';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faTelegram} from '@fortawesome/free-brands-svg-icons'
 
 const SearchBar = React.lazy(() => import('@magento/venia-ui/lib/components/SearchBar'));
 
@@ -58,7 +61,23 @@ const Header = props => {
         <Fragment>
             <div className={classes.switchersContainer}>
                 <div className={classes.switchers}>
-                    <a href="/">{phoneNumber}</a>
+                    <div className={classes.phoneNumber}>
+                        <a href="/">{phoneNumber}</a>
+                        <PhoneCall size={15}/>
+                    </div>
+                    <span className={classes.deliveryText}>
+                        <FormattedMessage
+                            id="header.delivery"
+                            defaultMessage="Доставка по всій Україні"
+                        />
+                        {/* eslint-disable-next-line jsx-a11y/accessible-emoji,react/jsx-no-literals */}
+                        <span>🇺🇦</span>
+                    </span>
+                    <div className={classes.socialMedia}>
+                        <Instagram size={15}/>
+                        <Youtube size={15}/>
+                        <FontAwesomeIcon icon={faTelegram}/>
+                    </div>
                 </div>
             </div>
             <header className={rootClass} data-cy="Header-root">

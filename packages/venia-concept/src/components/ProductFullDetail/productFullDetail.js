@@ -11,7 +11,7 @@ import { isProductConfigurable } from '@magento/peregrine/lib/util/isProductConf
 import { useStyle } from '@magento/venia-ui/lib/classify';
 import Breadcrumbs from '@magento/venia-ui/lib/components/Breadcrumbs';
 import Button from '@magento/venia-concept/src/components/Button';
-import Carousel from '@magento/venia-ui/lib/components/ProductImageCarousel';
+import Carousel from '@magento/venia-concept/src/components/ProductImageCarousel';
 import FormError from '@magento/venia-ui/lib/components/FormError';
 import QuantityStepper from '@magento/venia-ui/lib/components/QuantityStepper';
 import RichContent from '@magento/venia-ui/lib/components/RichContent/richContent';
