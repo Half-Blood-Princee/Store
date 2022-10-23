@@ -61,10 +61,9 @@ const Header = props => {
         <Fragment>
             <div className={classes.switchersContainer}>
                 <div className={classes.switchers}>
-                    <div className={classes.phoneNumber}>
-                        <a href="/">{phoneNumber}</a>
+                    <a className={classes.phoneNumber} href="tel:+380951002478">{phoneNumber}
                         <PhoneCall size={15}/>
-                    </div>
+                    </a>
                     <span className={classes.deliveryText}>
                         <FormattedMessage
                             id="header.delivery"
@@ -74,9 +73,9 @@ const Header = props => {
                         <span>🇺🇦</span>
                     </span>
                     <div className={classes.socialMedia}>
-                        <Instagram size={15}/>
-                        <Youtube size={15}/>
-                        <FontAwesomeIcon icon={faTelegram}/>
+                        <a href="/"><Instagram size={15}/></a>
+                        <a href="/"><Youtube size={15}/></a>
+                        <a href="/"><FontAwesomeIcon icon={faTelegram}/></a>
                     </div>
                 </div>
             </div>

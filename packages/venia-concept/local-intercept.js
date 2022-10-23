@@ -25,6 +25,42 @@ function localIntercept(targets) {
             path: require.resolve('./src/components/CartPage'),
             pattern: '/cart'
         });
+        routes.push({
+            exact: true,
+            name: 'Order history page',
+            path: require.resolve('./src/components/OrderHistoryPage'),
+            pattern: '/order-history'
+        });
+        routes.push({
+            exact: true,
+            name: 'Account information',
+            path: require.resolve('./src/components/AccountInformationPage'),
+            pattern: '/account-information'
+        });
+        routes.push({
+            exact: true,
+            name: 'Communications',
+            path: require.resolve('./src/components/CommunicationsPage'),
+            pattern: '/communications'
+        });
+        routes.push({
+            exact: true,
+            name: 'Saved payments',
+            path: require.resolve('./src/components/SavedPaymentsPage'),
+            pattern: '/saved-payments'
+        });
+        routes.push({
+            exact: true,
+            name: 'Address Book',
+            path: require.resolve('./src/components/AddressBookPage'),
+            pattern: '/address-book'
+        });
+        routes.push({
+            exact: true,
+            name: 'Wishlist',
+            path: require.resolve('./src/components/WishlistPage'),
+            pattern: '/wishlist'
+        });
         return routes;
     });
 }
